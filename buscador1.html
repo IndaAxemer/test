@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buscador de Proyectos</title>
+	<link rel="stylesheet" href="css/estilos.css" />
+	<meta charset="utf-8">
+	<script src="js/validacion.js"></script>
+</head>
+<body>
+	  <header>
+	  	<div class="container">
+	  		<div class="logo"><a href="Index.html"><img src="images/logo.png" alt="" /></a></div>
+	  		<div>
+	  			<label class="titulo">Búsqueda De Proyectos</label>
+	  		</div>
+        </div>
+	  </header>
+
+		  <div class="titulo">
+	 		 <label class="label"></label><br>
+		  </div>
+
+		  <div class="titulo">
+	  		 <a href="buscadorfiltro.html">Busqueda Avanzada</a>
+		  </div>
+
+		  <form name="form1" id="form1" method="post" action="buscadorrespuesta.html" 
+		  	enctype="multipart/form-data" onsubmit="return validacion();">
+
+		  	<div>
+			  <label class="label">Nombre Proyecto</label>
+			  <input type="text" name="nombreP" id="nombreP" />
+			</div>
+	 
+			<div>
+			  <label class="label">Estado</label>
+			  <div class="seleccion">
+			    <input type="checkbox" id="disponible" name="estado" value="disponible">
+  				<label for="disponible">Disponible</label>
+  				<br>
+  				<input type="checkbox" id="en_Desarrollo" name="estado" value="en_Desarrollo">
+  				<label for="en_Desarrollo">En Desarrollo</label>
+  				<br>
+  				<input type="checkbox" id="abandonado" name="estado" value="abandonado">
+  				<label for="abandonado">Abandonado</label>
+  				<br>
+  			  </div>
+		    </div>
+
+			<div>
+			  <label class="label">Asignatura</label>
+			  <select name="asignatura" id="asignatura">
+		      	  <option value="0">--------------------------Seleccione--------------------------</option>
+		  	      <option value="1">6°to Semestre - Gestión de Proyectos Informáticos</option>
+		  	      <option value="2">6°to Semestre - Preparación y Evaluación de Proyectos</option>
+		          <option value="3">7°to Semestre - Taller de Proyectos de Software</option>
+		          <option value="4">7°to Semestre - Taller de Proyectos de Infraestructura</option>
+		          <option value="5">8°to Semestre - Taller Integral de Proyectos Informáticos</option>
+		      </select>
+			</div>
+
+		  	<div class="boton">
+		  		<input type="submit" name="btn_buscar" id="btn_buscar" value="Buscar"/>
+		  	</div>
+		  </form>
+
+	   <footer>
+	     <a href="Index.html">Salir</a>
+	   </footer>
+</body>
+</html>

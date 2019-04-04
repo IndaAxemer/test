@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- 
+	<?php
+		$mysqli = new MYSQLI('localhost','root','','busqueda');
+		if(!$mysqli) { die ("Error en la conexión");  } 
+	?>
+!-->
+<html>
+<head>
+	<title>Buscador de Proyectos</title>
+	<link rel="stylesheet" href="css/estilos.css" />
+	<meta charset="utf-8">
+</head>
+<body>
+	  <header>
+	  	<div class="container">
+	  		<div class="logo"><a href="Index.html"><img src="images/logo.png" alt="" /></a></div>
+	  		<div>
+	  			<label class="titulo">Resultados</label>
+	  		</div>
+        </div>
+	  </header>
+
+		<table border="1">
+		  <tr>
+		    <th>Nombre</th>
+		    <th>Estado</th>
+		    <th>Asignatura</th>
+		    <th>Tipo Proyecto</th>
+		    <th>Tipo Desarrollo</th>
+		    <th>Innovación</th>
+		    <th>Planteamiento</th>
+		  </tr>
+<!-- 
+	<?php
+		$sql = "select * from datos";
+  		$resultado = $mysqli->query($sql);
+  		while($registro = $resultado->fetch_array() )
+  		{
+  	?>
+!-->
+		 <tr>
+		    <th><?php echo $registro['nombre']; ?></th>
+		    <th><?php echo $registro['estado']; ?></th>
+		    <th><?php echo $registro['asignatura']; ?></th>
+		    <th><?php echo $registro['tipoP']; ?></th>
+		    <th><?php echo $registro['tipoD']; ?></th>
+		    <th><?php echo $registro['innovacion']; ?></th>
+		    <th><?php echo $registro['planteamiento']; ?></th>
+		 </tr>
+<!--
+	<?php		
+  		}
+	?>
+!-->
+		</table>
+		  <div class="titulo">
+	  		  <a href="buscador1.html">Volver</a>
+		  </div>
+
+	   <footer>
+	   </footer>
+</body>
+</html>

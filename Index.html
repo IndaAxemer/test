@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!-- 
+	<?php
+		$mysqli = new MYSQLI('localhost','root','','busqueda');
+		if(!$mysqli) { die ("Error en la conexión");  } 
+
+		$sql = "select * from usuario";
+  		$resultado = $mysqli->query($sql);
+  		while($registro = $resultado->fetch_array() )
+  		{
+  			
+  		}
+	?>
+!-->
+
+<html>
+<head>
+	<title>Buscador de Proyectos</title>
+	<link rel="stylesheet" href="css/estilos.css" />
+	<meta charset="utf-8">
+	<script src="js/validacion.js"></script>
+</head>
+<body>
+	  <header>
+	  	<div class="container">
+	  		<div class="logo"><a href="Index.html"><img src="images/logo.png" alt="" /></a></div>
+	  		<div>
+	  			<label class="titulo">Inicio de Sesión</label>
+	  		</div>
+        </div>
+	  </header>
+
+		<form name="form1" id="form1" method="post" action="buscador1.html" 
+			enctype="multipart/form-data" onsubmit="return validacion();">
+
+		 <div>
+		  <label class="label">Usuario</label>		  
+		  <input type="text" name="usuario" id="usuario" onblur="validaControl('usuario', 'errorUsuario')"/>
+		  <span id="errorUsuario"></span>
+		 </div>
+
+		 <div>
+		  <label class="label">Contraseña</label>
+		  <input type="password" name="password" id="password" onblur="validaControl('password', 'errorPassword')"/>
+		  <span id="errorPassword"></span>
+		 </div>
+
+		 <div class="boton">
+		  <input type="submit" name="btn_enviar" id="btn_enviar" value="Enviar"/>
+		 </div>
+		</form>
+	 <footer>
+	 		<div class="footer-bottom">
+			 	<div class="wrap">
+			 		<div class="copy-right">
+			 			<p>©Buscador 2018. Todos los derechos reservados | Desarrolado por <a href="http://www.inacap.com" target="_blank">Inacap</a></p>
+			 		</div>
+			 	
+			 		<div class="clear"></div>
+		 		</div>
+			</div>
+	 </footer>
+</body>
+</html>

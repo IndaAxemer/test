@@ -1,0 +1,170 @@
+html 
+{
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+}
+
+body
+{
+   background-color: #cb1307
+}
+
+/*
+#contenedor
+{
+   width:1000px;
+   border:2px groove #fff;
+   border-radius:20px;
+   box-shadow:5px 5px 3px #f00;
+   margin:0px auto;
+   background-color: #cb1307
+}
+*/
+
+header
+{
+   background-color: #f28858;
+   color:#ffffff;
+   text-align:center;
+   margin:0px;
+   padding:5px;
+   border-radius:20px 20px 0px 0px;
+   color: #000;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo img{
+   display: inline;
+   padding: 5px;
+}
+
+footer
+{
+
+   background-color: #f28858;
+   color:#ffffff;
+   text-align:center;
+   margin:0px;
+   padding:5px;
+   border-radius:0px 0px 20px 20px;
+   color: #000;
+   /*
+   background:;
+   padding:2% 0 5% 0;
+      */
+   position:relative;
+}
+
+.wrap{
+   width:80%;
+   margin:0 auto;
+   -moz-transition:all .2s linear;
+   -webkit-transition:all .2s linear; 
+   -o-transition:all .2s linear; 
+   -ms-transition:all .2s linear;
+}
+
+.news-desc-bottom p.right{
+   float:right;
+}
+
+.clear{clear:both;}
+
+.footer p{
+   font-size:13px;
+   color:#FFF;
+   line-height:2em;
+   width:70%;
+}
+
+.footer p{
+   width:100%;
+}
+
+footer > a
+{
+   font-size: 22px;
+}
+.label
+{
+   display:inline-block;
+   width:210px;
+   padding:10px;
+   vertical-align: middle;
+   text-align: right;
+   margin-right: 5px;
+}
+
+form
+{
+   margin:30px auto;
+   width:600px;
+   border:2px solid #000;
+   padding:30px;
+   border-radius: 20px;
+   background-color: #fff
+}
+
+.boton
+{
+   text-align:center;
+}
+
+.titulo
+{
+   text-align:center;
+   color: #000;
+   font-size: 24px;
+   font-weight: bold;
+
+}
+
+.titulo > a
+{
+   text-decoration: underline;
+   color: #000;
+}
+
+table
+{ 
+   width:100%; 
+   margin:5px auto;
+   background-color: #fff
+   margin-right: auto;
+   margin-left: auto;
+}
+
+th,td
+{ 
+   width:125px;
+   background-color: #fff
+}
+
+.seleccion
+{
+   display:inline-block;
+   vertical-align: left;
+   width:200px;
+}
+
+
+
+/* Comentarios */
+
+/* Formas de anotar colores*/
+/* #ff0000;*/
+/* RGB(255, 0, 0);*/
+/* RGBA(255, 0, 0, 0.7);*/
+
+/* Bordes*/
+/* Solo 1 numero aplica a los 4 bordes*/
+/* Solo 2 numeros aplica a 2 bordes*/
+
+/* Si se anota con comas se aplica a todos estos elementos*/
+/* Si se anota con espacio indica que se aplica a solo este elemento que se encuentra dentro de este*/
